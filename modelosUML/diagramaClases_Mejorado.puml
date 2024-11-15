@@ -92,6 +92,5 @@ Ruta "1" -- "1" Horario
 Vehiculo --> Autobus
 Vehiculo --> Tren
 Vehiculo --> Tranvia
-Parada --> Estacion
 Parada -- Ruta
 @enduml
