@@ -6,7 +6,7 @@ https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcia
 
 - Diagrama de Clases
   
-https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-srgiom/blob/ec2a229c8738b9d977974d22bb36e0ca023b66bf/images/diagramaClases_Mejorado.png
+  https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-srgiom/blob/ec2a229c8738b9d977974d22bb36e0ca023b66bf/images/diagramaClases_Mejorado.png
 
 - Diagrama de Objetos
 
