@@ -1,0 +1,10 @@
+@startuml
+[*] --> Yo
+Yo --> SistemaTransportePublico : utilizo
+SistemaTransportePublico --> SistemaSaludHospital : para ir
+ElTiempo --> PlataformaStreaming : y veo
+SistemaSaludHospital --> ElTiempo : porque llueve
+PlataformaStreaming --> Universidad : mientras hago tareas
+Universidad -->  SistemaDeRepos : utilizando
+SistemaDeRepos --> [*]
+@enduml
