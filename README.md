@@ -1,6 +1,6 @@
 **Examen Parcial**
 
-- **[Respuestas](documents/Parcial)**
+- **[Respuestas](documents/Parcial.pdf)**
 
 **Modelo del Dominio - Ejercicio 2**
 
