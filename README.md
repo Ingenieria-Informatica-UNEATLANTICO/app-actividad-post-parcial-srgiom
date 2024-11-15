@@ -11,3 +11,5 @@ https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcia
 - Diagrama de Estados
 
 **Ejercicio 3**
+
+https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-srgiom/blob/cc04a0ff19cb9c13c3dd131aa69493e9900c290a/images/ejercicio_3.png
