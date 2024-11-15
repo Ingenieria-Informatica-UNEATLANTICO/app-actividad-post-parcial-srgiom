@@ -1,0 +1,89 @@
+@startuml
+
+class Pasajero {
+    +ID: int
+    +nombre: String
+    +email: String
+    +tarjetaViaje: TarjetaViaje
+    +winMaxViaje: int
+    --
+    +consultarHorario()
+    +recargarTarjeta()
+    +canjearViaje()
+}
+
+class Autobus {
+    +ID: int
+    +matricula: String
+    +capacidad: int
+    +encendido: bool
+    +conductorAsignado: Conductor
+    --
+    +asignarConductor()
+    +consultarRutaActual()
+    +encender()
+}
+
+class Conductor {
+    +ID: int
+    +nombre: String
+    +licencia: String
+    +rutaAsignada: Ruta
+    --
+    +iniciarRuta()
+    +finalizarRuta()
+    +consultarHorario()
+}
+
+class Ruta {
+    +ID: int
+    +nombreRuta: String
+    +paradas: List<Parada>
+    --
+    +asignarParadas()
+    +consultarParadas()
+}
+
+class Parada {
+    +ID: int
+    +nombre: String
+    +ubicacion: String
+    +rutaAsignada: Ruta
+    --
+    +consultarRutasDisponibles()
+    +notificarLlegadaAutobus()
+}
+
+class TarjetaViaje {
+    +ID: int
+    +saldo: float
+    +winMaxRecargar: float
+    --
+    +recargar()
+    +consultarSaldo()
+    +realizarPago()
+}
+
+class Horario {
+    +ID: int
+    +horaSalida: Time
+    +horaLlegada: Time
+    +frecuencia: int
+    --
+    +actualizarHorario()
+    +proximoHorario()
+}
+
+Pasajero --> Ruta
+Pasajero --> TarjetaViaje
+Pasajero --> Autobus
+Conductor --> Autobus
+Autobus --> Ruta
+Ruta --> Horario
+Ruta --> Parada
+TarjetaViaje --> Autobus
+Autobus --> Parada
+Pasajero --> Autobus
+Autobus --> Horario
+
+@enduml
