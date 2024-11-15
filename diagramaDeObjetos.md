@@ -1,10 +1,10 @@
-**Diagrama de clases**
+**Diagrama de Objetos**
 
 - Imagen Original
 
   ![Descripción](images/diagramaObjetos.png)
 
-- Imagen mejorada
+- Imagen Mejorada
 
   ![Descripción](images/diagramaObjetos_Mejorado.png)
 
