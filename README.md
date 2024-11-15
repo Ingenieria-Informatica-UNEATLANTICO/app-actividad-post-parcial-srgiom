@@ -5,11 +5,13 @@ https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcia
 **Modelo del Dominio - Ejercicio 2**
 
 - Diagrama de Clases
+  
+https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-srgiom/blob/ec2a229c8738b9d977974d22bb36e0ca023b66bf/images/diagramaClases_Mejorado.png
 
 - Diagrama de Objetos
 
+  https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-srgiom/blob/ec2a229c8738b9d977974d22bb36e0ca023b66bf/images/diagramaObjetos_Mejorado.png
+
 - Diagrama de Estados
 
-**Ejercicio 3**
-
-https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-srgiom/blob/cc04a0ff19cb9c13c3dd131aa69493e9900c290a/images/ejercicio_3.png
+  https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-srgiom/blob/ec2a229c8738b9d977974d22bb36e0ca023b66bf/images/diagramaEstados_Mejorado.png
