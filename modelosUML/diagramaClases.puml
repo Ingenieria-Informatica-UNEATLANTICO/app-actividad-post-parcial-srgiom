@@ -4,24 +4,23 @@ class Pasajero {
     +ID: int
     +nombre: String
     +email: String
-    +tarjetaViaje: TarjetaViaje
-    +winMaxViaje: int
+    +tarjetaViajes: TarjetaViaje
+    +historialViajes: int
     --
-    +consultarHorario()
     +recargarTarjeta()
-    +canjearViaje()
+    +consultarHistorial()
 }
 
 class Autobus {
     +ID: int
     +matricula: String
     +capacidad: int
-    +encendido: bool
+    +estado: String
     +conductorAsignado: Conductor
     --
     +asignarConductor()
     +consultarRutaActual()
-    +encender()
+    +actualizarEstado()
 }
 
 class Conductor {
@@ -39,25 +38,27 @@ class Ruta {
     +ID: int
     +nombreRuta: String
     +paradas: List<Parada>
+    +horario: String
     --
-    +asignarParadas()
+    +agregarParadas()
     +consultarParadas()
+    +consultarHorario()
 }
 
 class Parada {
     +ID: int
     +nombre: String
     +ubicacion: String
-    +rutaAsignada: Ruta
+    +rutasAsociadas: Ruta
     --
     +consultarRutasDisponibles()
-    +notificarLlegadaAutobus()
+    +modificarLlegadaAutobus()
 }
 
 class TarjetaViaje {
     +ID: int
     +saldo: float
-    +winMaxRecargar: float
+    +historialRecargas: float
     --
     +recargar()
     +consultarSaldo()
