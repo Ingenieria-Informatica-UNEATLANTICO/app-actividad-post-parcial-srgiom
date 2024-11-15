@@ -1,0 +1,97 @@
+@startuml
+abstract class Vehiculo {
+    - ID: int
+    - matricula: String
+    - capacidad: int
+    - estado: String
+    + actualizarEstado()
+    + asignarConductor(conductor: Conductor)
+    + consultarRutaActual(): Ruta
+}
+
+class Autobus extends Vehiculo
+class Tren extends Vehiculo
+class Tranvia extends Vehiculo
+
+class Conductor {
+    - ID: int
+    - nombre: String
+    - licencia: String
+    - vehiculoAsignado: Vehiculo
+    + iniciarRuta()
+    + finalizarRuta()
+    + consultarHorario(): Horario
+}
+
+class Pasajero {
+    - ID: int
+    - nombre: String
+    - edad: int
+    - tarjetaViaje: TarjetaViaje
+    - boletos: List<Boleto>
+    + consultarRuta()
+    + comprarBoleto(boleto: Boleto)
+    + pagarConTarjeta(monto: float): bool
+}
+
+class Ruta {
+    - ID: int
+    - nombreRuta: String
+    - horario: Horario
+    - paradas: List<Parada>
+    + asignarVehiculo(vehiculo: Vehiculo)
+    + consultarVehiculoDisponible(): Vehiculo
+}
+
+class Parada {
+    - ID: int
+    - nombre: String
+    - ubicacion: String
+    - rutasDisponibles: List<Ruta>
+    + consultarVehiculosDisponibles(): List<Vehiculo>
+}
+
+class Estacion extends Parada
+
+class Horario {
+    - ID: int
+    - horaSalida: String
+    - horaLlegada: String
+    - frecuencia: int
+    + actualizarHorario()
+    + consultarProximoItinerario(): Horario
+}
+
+class Boleto {
+    - ID: int
+    - precio: float
+    - valido: bool
+    - fechaCompra: Date
+    + validarBoleto(): bool
+}
+
+class TarjetaViaje {
+    - saldo: float
+    + retirarSaldo(monto: float): bool
+    + recargarSaldo(monto: float)
+    + consultarSaldo(): float
+}
+
+class SistemaPago {
+    + procesarPago(monto: float, tarjeta: TarjetaViaje): bool
+}
+
+Pasajero "1" -- "1" TarjetaViaje
+Pasajero "1" -- "*" Boleto
+Pasajero "1" -- "1" SistemaPago
+Pasajero "1" -- "1" Ruta : "Selecciona"
+Conductor "1" -- "1" Vehiculo
+Vehiculo "1" -- "1" Ruta
+Ruta "1" -- "*" Parada
+Ruta "1" -- "1" Horario
+Vehiculo <|-- Autobus
+Vehiculo <|-- Tren
+Vehiculo <|-- Tranvia
+Parada -- Ruta
+Estacion --|> Parada
+@enduml
