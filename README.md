@@ -4,12 +4,7 @@
 
 **Modelo del Dominio - Ejercicio 2**
 
-- Diagrama de Clases
-
-  - **[Imagen Original](images/diagramaClases.png)**
-  - **[Codigo Original](modelosUML/diagramaClases.puml)**
-  - **[Imagen Mejorada](images/diagramaClases_Mejorado.png)**
-  - **[Codigo Mejorado](modelosUML/diagramaClases_Mejorado.puml)**
+- **[Diagrama de Clases](diagramaDeClases.md)**
 
 - Diagrama de Objetos
 
