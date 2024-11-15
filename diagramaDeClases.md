@@ -1,12 +1,14 @@
 **Diagrama de clases**
 
-Imagen Original
+- Imagen Original
 
-![Descripción](images/diagramaClases.png)
+  ![Descripción](images/diagramaClases.png)
 
-Imagen mejorada
+- Imagen mejorada
 
-![Descripción](images/diagramaClases_Mejorado.png)
+  ![Descripción](images/diagramaClases_Mejorado.png)
+
+- Links
 
   - **[Imagen Original](images/diagramaClases.png)**
   - **[Codigo Original](modelosUML/diagramaClases.puml)**
