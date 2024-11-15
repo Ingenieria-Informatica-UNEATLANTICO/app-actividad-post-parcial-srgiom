@@ -1,6 +1,6 @@
 **Examen Parcial**
 
-- **[Respuestas](documents/CamScanner 11-15-2024 10.25.pdf)**
+- **[Respuestas](documents/Parcial)**
 
 **Modelo del Dominio - Ejercicio 2**
 
