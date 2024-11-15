@@ -1,6 +1,11 @@
 **Diagrama de clases**
 
+Imagen Original
+
 ![Descripción](images/diagramaClases.png)
+
+Imagen mejorada
+
 ![Descripción](images/diagramaClases_Mejorado.png)
 
   - **[Imagen Original](images/diagramaClases.png)**
