@@ -1,0 +1,76 @@
+@startuml
+object Pasajero1 {
+    ID = 1
+    nombre = "Ana Maria"
+    edad = 28
+    tarjetaViaje = TarjetaViaje1
+    boletos = [Boleto1]
+    ruta = Ruta1
+}
+
+object TarjetaViaje1 {
+    saldo = 25.0
+}
+
+object SistemaPago1 {
+    procesarPago(1.5, TarjetaViaje1)
+}
+
+object Conductor1 {
+    ID = 1
+    nombre = "Carlos Diaz"
+    licencia = "B12345"
+    vehiculoAsignado = Autobus1
+}
+
+object Autobus1 {
+    ID = 101
+    matricula = "XYZ-987"
+    capacidad = 40
+    estado = "En Ruta"
+    rutaAsignada = Ruta1
+}
+
+object Ruta1 {
+    ID = 1000
+    nombreRuta = "Ruta Principal"
+    horario = Horario1
+    paradas = [Parada1, Parada2, Estacion1]
+}
+
+object Parada1 {
+    ID = 1
+    nombre = "Centro"
+    ubicacion = "Calle Mayor"
+}
+
+object Estacion1 {
+    ID = 2
+    nombre = "Estación Norte"
+    ubicacion = "Av. del Tren"
+}
+
+object Horario1 {
+    ID = 1
+    horaSalida = "07:30"
+    horaLlegada = "08:30"
+    frecuencia = 10
+}
+
+object Boleto1 {
+    ID = 202
+    precio = 1.5
+    valido = true
+    fechaCompra = "2024-11-15"
+}
+
+Pasajero1 -- TarjetaViaje1
+Pasajero1 -- Boleto1
+Pasajero1 -- SistemaPago1
+Pasajero1 -- Ruta1
+Autobus1 -- Conductor1
+Autobus1 -- Ruta1
+Ruta1 -- Parada1
+Ruta1 -- Estacion1
+Ruta1 -- Horario1
+@enduml
