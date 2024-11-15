@@ -1,0 +1,14 @@
+@startuml
+[*] --> Disponible
+
+Disponible --> EnRuta : Iniciar ruta
+EnRuta --> EnParada : Llegada a parada
+EnParada --> EnRuta : Todos los pasajeros abordo
+EnParada --> EnMantenimiento : Problema técnico detectado
+EnMantenimiento --> Disponible : Reparación completada
+EnRuta --> FueraDeServicio : Fin de jornada
+FueraDeServicio --> Disponible : Preparado para el día siguiente
+
+EnParada --> Finalizado : Fin de la ruta
+Finalizado --> [*]
+@enduml

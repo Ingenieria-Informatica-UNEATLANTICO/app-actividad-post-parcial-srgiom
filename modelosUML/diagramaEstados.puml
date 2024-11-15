@@ -1,0 +1,16 @@
+@startuml
+
+[*] --> DisponibleParaRuta
+DisponibleParaRuta --> AsignaConductor : asigna conductor
+AsignaConductor --> IniciarRuta : inicia su ruta
+AsignaConductor --> ActualizarHorario
+ActualizarHorario --> IniciarRuta
+IniciarRuta --> ConsultarRuta
+ConsultarRuta --> DetenerRuta
+IniciarRuta --> DetenerRuta : detiene su ruta
+DetenerRuta --> ConsultarHistorial
+ConsultarHistorial --> ActualizarEstado
+DetenerRuta --> ActualizarEstado : ha terminado su ruta
+ActualizarEstado --> [*]
+
+@enduml

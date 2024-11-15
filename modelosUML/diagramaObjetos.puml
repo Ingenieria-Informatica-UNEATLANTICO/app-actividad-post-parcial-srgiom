@@ -1,0 +1,63 @@
+@startuml
+
+object Pasajero {
+    ID = "1"
+    nombre = "Juan López"
+    email = "juanlopez@example.com"
+    tarjetaViaje = "3"
+    historialViajes = "16"
+}
+
+object Autobus {
+    ID = "100"
+    matricula = "AGS432"
+    capacidad = "45"
+    estado = "Ocupado"
+    conductorAsignado = "Conductor 100"
+}
+
+object Conductor {
+    ID = "100"
+    nombre = "Pepe"
+    licencia = "123456789"
+    rutaAsignada = "10"
+}
+
+object Ruta {
+    ID = "1000"
+    nombreRuta = "Macedonia"
+    paradas = "10"
+    horario = "12:00"
+}
+
+object Parada {
+    ID = "100500"
+    nombre = "San Fernando"
+    ubicacion = "Calle San Fernando 12"
+    rutaAsociada = "1000"
+}
+
+object TarjetaViaje {
+    ID = "1"
+    saldo = "5"
+    historialViajes = "2"
+}
+
+object Horario {
+    ID = "1000"
+    horaSalida = "12:00"
+    horaLlegada = "15:00"
+    frecuencia = "1"
+}
+
+Pasajero --> TarjetaViaje
+Pasajero --> Autobus
+Pasajero --> Ruta
+Conductor --> Autobus
+Autobus --> Parada
+Autobus --> Ruta
+Autobus --> Horario
+TarjetaViaje --> Autobus
+Ruta --> Horario
+
+@enduml
