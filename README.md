@@ -5,13 +5,22 @@ https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcia
 **Modelo del Dominio - Ejercicio 2**
 
 - Diagrama de Clases
-  
-  https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-srgiom/blob/ec2a229c8738b9d977974d22bb36e0ca023b66bf/images/diagramaClases_Mejorado.png
+
+  - **[Imagen Original](images/diagramaClases.png)**
+  - **[Codigo Original](modelosUML/diagramaClases.puml)**
+  - **[Imagen Mejorada](images/diagramaClases_Mejorado.png)**
+  - **[Codigo Mejorado](modelosUML/diagramaClases_Mejorado.puml)**
 
 - Diagrama de Objetos
 
-  https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-srgiom/blob/ec2a229c8738b9d977974d22bb36e0ca023b66bf/images/diagramaObjetos_Mejorado.png
+  - **[Imagen Original](images/diagramaObjetos.png)**
+  - **[Codigo Original](modelosUML/diagramaObjetos.puml)**
+  - **[Imagen Mejorada](images/diagramaObjetos_Mejorado.png)**
+  - **[Codigo Mejorado](modelosUML/diagramaObjetos_Mejorado.puml)**
 
 - Diagrama de Estados
 
-  https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-srgiom/blob/ec2a229c8738b9d977974d22bb36e0ca023b66bf/images/diagramaEstados_Mejorado.png
+  - **[Imagen Original](images/diagramaEstados.png)**
+  - **[Codigo Original](modelosUML/diagramaEstados.puml)**
+  - **[Imagen Mejorada](images/diagramaEstados_Mejorado.png)**
+  - **[Codigo Mejorado](modelosUML/diagramaEstados_Mejorado.puml)**
