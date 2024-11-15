@@ -6,10 +6,6 @@
 
 - **[Diagrama de Clases](diagramaDeClases.md)**
 
-- Diagrama de Objetos
+- **[Diagrama de Objetos](diagramaDeObjetos.md)**
 
-  - **[Diagrama de Objetos](diagramaDeObjetos.md)**
-
-- Diagrama de Estados
-
-  - **[Diagrama de Estados](diagramaDeEstados.md)**
+- **[Diagrama de Estados](diagramaDeEstados.md)**
