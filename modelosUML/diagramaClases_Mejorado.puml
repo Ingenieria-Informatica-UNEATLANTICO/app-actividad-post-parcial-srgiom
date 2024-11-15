@@ -9,9 +9,9 @@ abstract class Vehiculo {
     + consultarRutaActual(): Ruta
 }
 
-class Autobus extends Vehiculo
-class Tren extends Vehiculo
-class Tranvia extends Vehiculo
+class Autobus
+class Tren
+class Tranvia
 
 class Conductor {
     - ID: int
@@ -51,7 +51,7 @@ class Parada {
     + consultarVehiculosDisponibles(): List<Vehiculo>
 }
 
-class Estacion extends Parada
+class Estacion
 
 class Horario {
     - ID: int
@@ -89,9 +89,9 @@ Conductor "1" -- "1" Vehiculo
 Vehiculo "1" -- "1" Ruta
 Ruta "1" -- "*" Parada
 Ruta "1" -- "1" Horario
-Vehiculo <|-- Autobus
-Vehiculo <|-- Tren
-Vehiculo <|-- Tranvia
+Vehiculo --> Autobus
+Vehiculo --> Tren
+Vehiculo --> Tranvia
+Parada --> Estacion
 Parada -- Ruta
-Estacion --|> Parada
 @enduml
